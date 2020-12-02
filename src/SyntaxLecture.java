@@ -147,8 +147,9 @@ public class SyntaxLecture {
 //        System.out.println(b);
 
 
-
-
+    int num = 3000;
+    byte num2 = (byte) num;
+    System.out.println(num2);
 
 
         // implicit casting - less to more precise (widening)
