@@ -8,15 +8,32 @@ public class ControlFlowExercises {
 //            i++;
 //        }
 
-        int i = 1;
+//        int i = 1;
+//
+//        do {
+//            System.out.println(i += 1);
+//
+//            i++;
+//        }
+//        while (i <= 100);
+
+//        int i = 105;
+//
+//        do {
+//            System.out.println(i -= 5);
+//
+//
+//        }
+//        while (i >= -5);
+
+        int i = 105;
 
         do {
-            System.out.println(i += 1);
+            System.out.println(i -= 5);
 
-            i++;
+
         }
-        while (i <= 100);
-
+        while (i >= -5);
 
 
     }
