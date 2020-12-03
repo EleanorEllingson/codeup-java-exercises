@@ -30,19 +30,33 @@ public class ConsoleExercises {
 
         //next just captures the first word
 
-        System.out.println("Please enter the length, and width of your room");
+//        System.out.println("Please enter the length, and width of your room");
+//        String length = userInput.nextLine();
+//        String width = userInput.nextLine();
+//
+//        int lengthN = Integer.parseInt(length);
+//        int widthN = Integer.parseInt(width);
+//        int area = lengthN * widthN;
+//        int perimeter = 2 * (lengthN + widthN);
+//
+//        System.out.printf("The area of the room is %s\n", area);
+//        System.out.printf("The perimeter of the room is %s\n", perimeter);
+
+        System.out.println("Please enter the length, and width, and volume of your room");
         String length = userInput.nextLine();
         String width = userInput.nextLine();
+        String height = userInput.nextLine();
 
-        int lengthN = Integer.parseInt(length);
-        int widthN = Integer.parseInt(width);
-        int area = lengthN * widthN;
-        int perimeter = 2 * (lengthN + widthN);
+        double lengthN = Integer.parseInt(length);
+        double widthN = Integer.parseInt(width);
+        double heightN = Integer.parseInt(height);
+        double area = lengthN * widthN;
+        double perimeter = 2 * (lengthN + widthN);
+        double volume = lengthN * widthN * heightN;
 
-        System.out.printf("The area of the room is %s\n", area);
-        System.out.printf("The perimeter of the room is %s\n", perimeter);
-
-
+        System.out.printf("The area of the room is %s.\n", area);
+        System.out.printf("The perimeter of the room is %s.\n", perimeter);
+        System.out.printf("The volume of the room is %s.\n", volume);
 
     }
 }
