@@ -12,11 +12,15 @@ public class Bob {
         else if(conversation.endsWith("!")){
             System.out.println("Whoa, chill out!");
         }
-        else if(conversation.equals(" ")){
+        else if(conversation.isEmpty()){
             System.out.println("Fine. Be that way!");
         }else {
             System.out.println("Whatever.");
         }
+
+
+
+
 
     }
 }
