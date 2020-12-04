@@ -62,38 +62,38 @@ public class ControlFlowExercises {
 //        }
 
         Scanner userInput = new Scanner(System.in);
-//        System.out.println("What number would you like to go up to?");
-//        int userNumber = userInput.nextInt();
-//        System.out.println("Here is your table");
-//        System.out.println("number | squared | cubed");
-//        System.out.println("------ | ------- | -----");
-//        int number = 1;
-//        while (number <= userNumber){
-//            System.out.print(number + "\t   | ");
-//            System.out.print((int) Math.pow(number, 2) + "\t\t | ");
-//            System.out.print((int) Math.pow(number, 3) + "\t\n");
-//        number++;
+        System.out.println("What number would you like to go up to?");
+        long userNumber = userInput.nextInt();
+        System.out.println("Here is your table");
+        System.out.println("number | squared | cubed");
+        System.out.println("------ | ------- | -----");
+        long number = 1L;
+        while (number <= userNumber){
+            System.out.print(number + "\t   | ");
+            System.out.print((long) Math.pow(number, 2L) + "\t\t | ");
+            System.out.print((long) Math.pow(number, 3L) + "\t\n");
+        number++;
+        }
+//        System.out.println("Enter your grade. (0-100)");
+//        int grade = userInput.nextInt();
+//        if(grade <= 100 && grade >= 88){
+//            System.out.println("You have an A");
 //        }
-        System.out.println("Enter your grade. (0-100)");
-        int grade = userInput.nextInt();
-        if(grade <= 100 && grade >= 88){
-            System.out.println("You have an A");
-        }
-        else if(grade <= 87 && grade >= 80){
-            System.out.println("You have an B");
-        }
-        else if(grade <= 79 && grade >= 67){
-            System.out.println("You have an C");
-        }
-        else if(grade <= 66 && grade >= 60){
-            System.out.println("You have an D");
-        }
-        else if(grade <= 59 && grade >= 0){
-            System.out.println("You have an F");
-        }
-        else {
-            System.out.println("Invalid");
-        }
+//        else if(grade <= 87 && grade >= 80){
+//            System.out.println("You have an B");
+//        }
+//        else if(grade <= 79 && grade >= 67){
+//            System.out.println("You have an C");
+//        }
+//        else if(grade <= 66 && grade >= 60){
+//            System.out.println("You have an D");
+//        }
+//        else if(grade <= 59 && grade >= 0){
+//            System.out.println("You have an F");
+//        }
+//        else {
+//            System.out.println("Invalid");
+//        }
 
 
 
