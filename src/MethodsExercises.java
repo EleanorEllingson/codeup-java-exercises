@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class MethodsExercises {
 
     public static int addition(int num1, int num2){
@@ -22,7 +23,14 @@ public class MethodsExercises {
         return num1 % num2;
     }
 
+    Scanner userInput = new Scanner(System.in);
+    public static int getInteger(int min, int max){
+        System.out.println("Enter a number between 1 and 10.");
+        int userInput = ();
+        if(){
 
+        }
+    }
 
 
 
