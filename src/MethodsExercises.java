@@ -36,7 +36,29 @@ public class MethodsExercises {
     }
 
 
+    public static void getFactorial(){
+        System.out.println("Enter a number between 1 and 10.");
+        Scanner userInput = new Scanner(System.in);
+        int num = userInput.nextInt();
+        if(num >= 1 && num <= 10){
+            long factorialL = 1;
 
+            for(int i = 1; i <= num; i++){
+                factorialL *= i;
+
+            }
+            System.out.println(factorialL);
+        }else {
+            System.out.println("Number is invalid.");
+
+        }
+        System.out.println("Do you want to continue? (Y or N)");
+        Scanner userString = new Scanner(System.in);
+        String response = userString.nextLine();
+        if(response.toUpperCase().equals("Y")){
+            getFactorial();
+        }
+    }
 
 
 
@@ -49,6 +71,7 @@ public class MethodsExercises {
         System.out.println(division(9, 3));
         System.out.println(modulus(10, 3));
         getInteger(1, 10);
+        getFactorial();
 
     }
 
