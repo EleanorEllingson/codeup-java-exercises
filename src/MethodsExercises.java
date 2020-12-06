@@ -23,14 +23,20 @@ public class MethodsExercises {
         return num1 % num2;
     }
 
-    Scanner userInput = new Scanner(System.in);
+
     public static int getInteger(int min, int max){
         System.out.println("Enter a number between 1 and 10.");
-        int userInput = ();
-        if(){
+        Scanner userInput = new Scanner(System.in);
+        int num = userInput.nextInt();
+        if(num >= min && num <= max){
+            return num;
+        }else {return getInteger(min, max);}
 
-        }
+
     }
+
+
+
 
 
 
@@ -42,6 +48,8 @@ public class MethodsExercises {
         System.out.println(subtraction(2, 6));
         System.out.println(division(9, 3));
         System.out.println(modulus(10, 3));
+        getInteger(1, 10);
+
     }
 
 
