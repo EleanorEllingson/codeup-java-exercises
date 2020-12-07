@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 public class MethodsExercises {
 
     public static int addition(int num1, int num2){
@@ -60,8 +61,27 @@ public class MethodsExercises {
         }
     }
 
+    public static void diceRoll(){
+        System.out.println("Enter the number of sides for your dice.");
+        Scanner userInput = new Scanner(System.in);
+        Random rand =new Random();
+        int sides = userInput.nextInt();
+        int dice1 = rand.nextInt(sides);
+        int dice2 = rand.nextInt(sides);
+
+            System.out.println(dice1);
+
+            System.out.println(dice2);
 
 
+        System.out.println("Would you like to roll again? Y or N");
+        Scanner userDice = new Scanner(System.in);
+        String response = userDice.nextLine();
+            if(response.toUpperCase().equals("Y")){
+                diceRoll();
+            }
+
+    }
 
 
     public static void main(String[] args) {
@@ -72,6 +92,7 @@ public class MethodsExercises {
         System.out.println(modulus(10, 3));
         getInteger(1, 10);
         getFactorial();
+        diceRoll();
 
     }
 
