@@ -18,7 +18,7 @@ public class HighLow {
                     count ++;
                     System.out.println("You have used: " + count + " guesses.");
                     if(count > 5){
-                        System.out.println("You lose");
+                        System.out.println("YOU LOSE!!!!!!");
                         stillGuessing = false;
                     }
                 if (enteredNum == randNum) {

@@ -24,6 +24,9 @@ public class MethodsExercises {
         return num1 % num2;
     }
 
+    //Create a method that validates that user input is in a certain range
+    //
+    //The method signature should look like this:
 
     public static int getInteger(int min, int max){
         System.out.println("Enter a number between 1 and 10.");
@@ -35,6 +38,7 @@ public class MethodsExercises {
 
 
     }
+
 
 
     public static void getFactorial(){
