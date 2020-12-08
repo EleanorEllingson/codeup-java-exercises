@@ -17,12 +17,13 @@ public class HighLow {
                 System.out.println("Valid Entry");
                     count ++;
                     System.out.println("You have used: " + count + " guesses.");
-                    if(count > 5){
+                    if(count >= 6){
                         System.out.println("YOU LOSE!!!!!!");
                         stillGuessing = false;
+                        System.out.println("The number was: " + randNum);
                     }
                 if (enteredNum == randNum) {
-                    System.out.println("GOOD GUESS!");
+                    System.out.println("GOOD GUESS, You're the WINNER!");
                     stillGuessing = false;
                 } else if (enteredNum < randNum) {
                     System.out.println("HIGHER");
