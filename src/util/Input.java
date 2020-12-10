@@ -37,7 +37,7 @@ public class Input {
     }
 
     public Double getDouble(double min, double max){
-        System.out.println("Enter a decimal number that is between " + min + " and " + max);
+        System.out.println("Enter a number that is between " + min + " and " + max);
         double decNumber = this.scanner.nextDouble();
         if(decNumber >= min && decNumber <= max){
             return decNumber;
@@ -46,7 +46,7 @@ public class Input {
         }
     }
     public Double getDouble(){
-        System.out.println("Enter a decimal number");
+        System.out.println("Enter a number");
         double decNumber2 = this.scanner.nextDouble();
             return decNumber2;
 
