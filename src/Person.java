@@ -10,6 +10,10 @@ class Person {
 //TODO: return the person's name
     }
 
+    public String toString() {
+        return name;
+    }
+
     public void setName(String name){
         this.name = name;
 
