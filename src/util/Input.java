@@ -22,7 +22,7 @@ public class Input {
     }
 
     public int getInt(int min, int max){
-        System.out.println("Enter a number that is between " + min + " and " + max);
+//        System.out.println("Enter a number that is between " + min + " and " + max);
         int number = this.scanner.nextInt();
         if(number >= min && number <= max){
           return number;
