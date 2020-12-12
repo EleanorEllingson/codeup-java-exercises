@@ -3,6 +3,7 @@ import util.Input;
 public class MoviesApplication {
     public static void main(String[] args){
 
+        System.out.println("Choose from the following.");
         System.out.println("0 - exit");
         System.out.println("1 - view all movies ");
         System.out.println("2 - view movies in the animated category");
@@ -14,6 +15,66 @@ public class MoviesApplication {
         int userChoice = scanner1.getInt(0, 5);
 
         //I have user selection--need to tie number to what they select
+        if(userChoice == 1) {
+//
+            Movie[] movieArray = MoviesArray.findAll();
+            for (int i = 0; i < movieArray.length; i++) {
+                Movie movie = movieArray[i];
+                System.out.println(movie.getName() + " -- " + movie.getCatergory());
+            }
+        }
+         else if (userChoice == 2){
+//
+                Movie[] movieArray = MoviesArray.findAll();
+                for(int i = 0; i < movieArray.length; i++){
 
+                    Movie movieAnimated = movieArray[i];
+                    if(movieAnimated.getCatergory().equals("drama")) {
+                        System.out.println(movieAnimated.getName() + " -- " + movieAnimated.getCatergory());
+                    }
+                }
+        }
+        else if (userChoice == 3){
+//
+            Movie[] movieArray = MoviesArray.findAll();
+            for(int i = 0; i < movieArray.length; i++){
+
+                Movie movieAnimated = movieArray[i];
+                if(movieAnimated.getCatergory().equals("animated")) {
+                    System.out.println(movieAnimated.getName() + " -- " + movieAnimated.getCatergory());
+                }
+            }
+        }
+        else if (userChoice == 4){
+//
+            Movie[] movieArray = MoviesArray.findAll();
+            for(int i = 0; i < movieArray.length; i++){
+
+                Movie movieAnimated = movieArray[i];
+                if(movieAnimated.getCatergory().equals("horror")) {
+                    System.out.println(movieAnimated.getName() + " -- " + movieAnimated.getCatergory());
+                }
+            }
+        }
+        else if (userChoice == 5){
+//
+            Movie[] movieArray = MoviesArray.findAll();
+            for(int i = 0; i < movieArray.length; i++){
+
+                Movie movieAnimated = movieArray[i];
+                if(movieAnimated.getCatergory().equals("scifi")) {
+                    System.out.println(movieAnimated.getName() + " -- " + movieAnimated.getCatergory());
+                }
+            }
+        }
+
+        else if (userChoice == 0){
+            System.out.println("Goodbye!");
+        }
+        System.out.println("Do you want to continue?");
+            while (scanner1.yesNo()){
+
+            }
+            System.out.println("GoodBye!");
     }
 }
