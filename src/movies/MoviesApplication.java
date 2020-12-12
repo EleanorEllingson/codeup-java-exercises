@@ -3,6 +3,8 @@ import util.Input;
 public class MoviesApplication {
     public static void main(String[] args){
 
+        boolean applicationRunning = true;
+        while (applicationRunning){
         System.out.println("Choose from the following.");
         System.out.println("0 - exit");
         System.out.println("1 - view all movies ");
@@ -69,12 +71,18 @@ public class MoviesApplication {
         }
 
         else if (userChoice == 0){
+            applicationRunning = false;
             System.out.println("Goodbye!");
         }
         System.out.println("Do you want to continue?");
-            while (scanner1.yesNo()){
+        Input scanner2 = new Input();
+        boolean shouldContinue = scanner2.yesNo();
+          if(!shouldContinue) {
+              applicationRunning = false;
+              System.out.println("GoodBye!");
+          }
+        }
 
-            }
-            System.out.println("GoodBye!");
     }
+
 }
