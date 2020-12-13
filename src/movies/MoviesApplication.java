@@ -12,9 +12,10 @@ public class MoviesApplication {
         System.out.println("3 - view movies in the drama category");
         System.out.println("4 - view movies in the horror category");
         System.out.println("5 - view movies in the scifi category");
+        System.out.println("6 - view movies in the musical category");
         System.out.println("Enter your choice:");
         Input scanner1 = new Input();
-        int userChoice = scanner1.getInt(0, 5);
+        int userChoice = scanner1.getInt(0, 6);
 
         //I have user selection--need to tie number to what they select
         if(userChoice == 1) {
@@ -31,7 +32,7 @@ public class MoviesApplication {
                 for(int i = 0; i < movieArray.length; i++){
 
                     Movie movieAnimated = movieArray[i];
-                    if(movieAnimated.getCatergory().equals("drama")) {
+                    if(movieAnimated.getCatergory().equals("animated")) {
                         System.out.println(movieAnimated.getName() + " -- " + movieAnimated.getCatergory());
                     }
                 }
@@ -42,7 +43,7 @@ public class MoviesApplication {
             for(int i = 0; i < movieArray.length; i++){
 
                 Movie movieAnimated = movieArray[i];
-                if(movieAnimated.getCatergory().equals("animated")) {
+                if(movieAnimated.getCatergory().equals("drama")) {
                     System.out.println(movieAnimated.getName() + " -- " + movieAnimated.getCatergory());
                 }
             }
@@ -65,6 +66,17 @@ public class MoviesApplication {
 
                 Movie movieAnimated = movieArray[i];
                 if(movieAnimated.getCatergory().equals("scifi")) {
+                    System.out.println(movieAnimated.getName() + " -- " + movieAnimated.getCatergory());
+                }
+            }
+        }
+        else if (userChoice == 6){
+//
+            Movie[] movieArray = MoviesArray.findAll();
+            for(int i = 0; i < movieArray.length; i++){
+
+                Movie movieAnimated = movieArray[i];
+                if(movieAnimated.getCatergory().equals("musical")) {
                     System.out.println(movieAnimated.getName() + " -- " + movieAnimated.getCatergory());
                 }
             }
