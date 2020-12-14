@@ -27,32 +27,8 @@ class CircleTest {
 
 }
 
-class ShapeHelper {
-    public static double getArea(CircleRewritten circle){
-        return Math.PI * Math.pow(circle.getRadius(), 2);
-    }
-    public static double getArea(Square square){
-        return Math.pow(square.getLength(), 2);
-    }
-    public static double getCircumference(CircleRewritten circle){
-        return 2 * Math.PI * circle.getRadius();
-    }
-}
 
-class CircleRewritten {
-    private double radius;
-    public CircleRewritten(double radius) {
-        this.radius = radius;
-    }
 
-    public double getRadius() {
-        return this.radius;
-    }
-
-    public void setRadius(double radius) {
-        this.radius = radius;
-    }
-}
 
 
 

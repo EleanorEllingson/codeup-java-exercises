@@ -6,7 +6,15 @@ public class Square extends Rectangle {
         super(side, side);
 
     }
+    public double getPerimeter(double side) {
+        return 4 * side;
 
+    }
+
+    public double getArea(double side) {
+        return Math.pow(side, 2);
+
+    }
 
 
 

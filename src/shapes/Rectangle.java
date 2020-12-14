@@ -8,22 +8,19 @@ public class Rectangle {
         this.length = length;
         this.width = width;
     }
-    public Rectangle(double side){
+    public Rectangle(){
+
+    }
+
+
+
+
+    public double getPerimeter() {
+       return  2 * this.length + 2 * this.width;
 
     }
 
     public double getArea() {
-        return length;
-    }
-
-    double perimiter = 2 * length + 2 * width;
-    double area = length * width;
-
-    public double Perimeter() {
-        return perimiter;
-    }
-
-    public double Area() {
-        return area;
+        return this.length * this.width;
     }
 }
