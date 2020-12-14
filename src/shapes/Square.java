@@ -6,13 +6,15 @@ public class Square extends Rectangle {
         super(side, side);
 
     }
-    public double getPerimeter(double side) {
-        return 4 * side;
+    public double getPerimeter() {
+        System.out.println("Square implintation of perimiter");
+        return length * length;
 
     }
 
-    public double getArea(double side) {
-        return Math.pow(side, 2);
+    public double getArea() {
+        System.out.println("Square implintation of area");
+        return Math.pow(length, 2);
 
     }
 
