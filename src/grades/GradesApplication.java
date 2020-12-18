@@ -1,15 +1,17 @@
+package grades;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 import util.Input;
 
-public class GradesApplication extends Student{
+public class GradesApplication extends Student {
     public GradesApplication(String name){
         super(name);
     }
 
     public static void main(String[] args) {
-
+        HashMap<String, Student> student = new HashMap<>();
 
         Student student1 = new Student("Fred");
 
@@ -37,7 +39,7 @@ public class GradesApplication extends Student{
 
 
 
-        HashMap<String, Student> student = new HashMap<>();
+
         student.put("Fred123", student1);
         student.put("George123", student2);
         student.put("Harry123", student3);
@@ -46,7 +48,7 @@ public class GradesApplication extends Student{
 
         ArrayList<String> userNames = new ArrayList<String>(student.keySet());
 
-        System.out.println("Welcome");
+        System.out.println("Welcome!");
         boolean applicationRunning = true;
         while (applicationRunning) {
             System.out.println("Here are the GitHub usernames of our students:");
@@ -65,7 +67,7 @@ public class GradesApplication extends Student{
                 System.out.println("Sorry, no student found with the GitHub username of " + choice1);
             }
 
-
+            System.out.println(" ");
             System.out.println("Would you like to see another student?");
             Input scanner2 = new Input();
             boolean shouldContinue = scanner2.yesNo();

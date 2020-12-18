@@ -47,7 +47,7 @@ public class SyntaxLecture {
 //            System.out.println(primitiveExample);
 
 
-//            Student referenceExample = new Student();
+//            grades.Student referenceExample = new grades.Student();
 
 
         // use the smallest type needed for the job
