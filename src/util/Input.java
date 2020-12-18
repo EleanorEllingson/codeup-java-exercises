@@ -22,6 +22,7 @@ public class Input {
     }
 
     public int getInt(int min, int max){
+
 //        System.out.println("Enter a number that is between " + min + " and " + max);
         int number = this.scanner.nextInt();
         if(number >= min && number <= max){
@@ -30,46 +31,38 @@ public class Input {
             return getInt(min, max);
         }
     }
-    public int getInt(){
-        System.out.println("Enter a number");
-        int number2 = this.scanner.nextInt();
+    public int getInt() {
+        try {
+            return Integer.valueOf(getString());
+        } catch (NumberFormatException e) {
+            System.out.println("Enter a number");
+            int number2 = this.scanner.nextInt();
 
             return number2;
 
+        }
     }
-
     public Double getDouble(double min, double max){
         System.out.println("Enter a number that is between " + min + " and " + max);
         double decNumber = this.scanner.nextDouble();
         if(decNumber >= min && decNumber <= max){
             return decNumber;
         }else {
+            System.out.println("Input must be a number!");
             return getDouble(min, max);
+
         }
     }
-    public Double getDouble(){
+    public Double getDouble() {
         System.out.println("Enter a number");
-        double decNumber2 = this.scanner.nextDouble();
-            return decNumber2;
+        try {
+            return Double.valueOf(getString());
+        } catch (NumberFormatException e) {
+            System.out.println("Input must be a number");
+            return getDouble();
+
+        }
+
+        }
 
     }
-}
-
-
-
-class InputTest {
-    public static void main(String[] args) {
-        Input scanner1 = new Input();
-        System.out.println(scanner1.getInt(1, 10));
-        Input scanner2 = new Input();
-        System.out.println(scanner2.getInt());
-        Input scanner3 = new Input();
-        System.out.println(scanner3.yesNo());
-        Input scanner4 = new Input();
-        System.out.println(scanner4.getDouble(.1, .9));
-        Input scanner5 = new Input();
-        System.out.println(scanner5.getDouble());
-
-    }
-}
-
