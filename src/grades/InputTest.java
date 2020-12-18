@@ -11,7 +11,7 @@ class InputTest {
         Input scanner3 = new Input();
         System.out.println(scanner3.yesNo());
         Input scanner4 = new Input();
-        System.out.println(scanner4.getDouble(.1, .9));
+        System.out.println(scanner4.getDouble(.1, .8));
         Input scanner5 = new Input();
         System.out.println(scanner5.getDouble());
 
