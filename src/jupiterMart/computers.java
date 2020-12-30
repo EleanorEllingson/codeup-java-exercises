@@ -7,6 +7,7 @@ public class computers extends products {
         return laptop;
     }
 
+
     public void setLaptop(boolean laptop) {
         this.laptop = laptop;
     }
