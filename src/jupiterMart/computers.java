@@ -1,14 +1,13 @@
 package jupiterMart;
 
 public class computers extends products {
-    boolean laptop;
+    private String OS;
+    private boolean laptop;
 
-    public boolean isLaptop() {
-        return laptop;
-    }
-
-
-    public void setLaptop(boolean laptop) {
+    public computers(String OS, boolean laptop) {
+        this.OS = OS;
         this.laptop = laptop;
     }
 }
+
+

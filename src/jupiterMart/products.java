@@ -1,17 +1,14 @@
 package jupiterMart;
 
 public class products {
-    String productName;
-    int id;
-    double price;
 
-    public String getProductName() {
-        return productName;
-    }
+    private int id;
+    private double price;
 
-    public void setProductName(String productName) {
-        this.productName = productName;
-    }
+//    public products(int id, double price) {
+//        this.id = id;
+//        this.price = price;
+//    }
 
     public int getId() {
         return id;
