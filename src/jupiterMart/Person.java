@@ -13,6 +13,7 @@ public class Person {
     }
 
     public void ringItem(products item){
+
         System.out.println("ID # " + item.getId() + " cost " + item.getPrice());
     }
 
