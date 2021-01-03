@@ -5,10 +5,7 @@ public class products {
     private int id;
     private double price;
 
-//    public products(int id, double price) {
-//        this.id = id;
-//        this.price = price;
-//    }
+
 
     public int getId() {
         return id;

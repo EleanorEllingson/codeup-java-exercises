@@ -1,5 +1,7 @@
 package practiceJupiterMart;
 
+import java.util.ArrayList;
+
 public class person {
     private String firstName;
     private String lastName;
@@ -9,26 +11,15 @@ public class person {
         this.lastName = lastName;
     }
 
-//    public double ringUpCart(){
-//        int quantity;
-//        int id;
-//
-//
-//    }
-
-    public String getFirstName() {
-        return firstName;
+    public void ringItem(products item){
+        System.out.println("ID # " + item.getId() + " cost " + item.getPrice() );
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+   public double askForMoney(ArrayList<products> cart){
+        double total = 0;
+        for(products item : cart){
+            total += item.getPrice();
+        }
+        return total;
+   }
 }

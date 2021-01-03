@@ -3,19 +3,8 @@ package practiceJupiterMart;
 public class products {
 
     private int id;
-    private int price;
-    private String OS;
-    private String screenSize;
-    private boolean isLaptop;
+    private double price;
 
-
-    public products(int id, int price, String OS, String screenSize, boolean isLaptop) {
-        this.id = id;
-        this.price = price;
-        this.OS = OS;
-        this.screenSize = screenSize;
-        this.isLaptop = isLaptop;
-    }
 
     public int getId() {
         return id;
@@ -25,35 +14,16 @@ public class products {
         this.id = id;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
-    public String getOS() {
-        return OS;
-    }
+//    public static void shoppingCart(){
+//        System.out.println();
+//    }
 
-    public void setOS(String OS) {
-        this.OS = OS;
-    }
-
-    public String getScreenSize() {
-        return screenSize;
-    }
-
-    public void setScreenSize(String screenSize) {
-        this.screenSize = screenSize;
-    }
-
-    public boolean isLaptop() {
-        return isLaptop;
-    }
-
-    public void setLaptop(boolean laptop) {
-        isLaptop = laptop;
-    }
 }
