@@ -3,10 +3,10 @@ package headFirst;
 public class PhraseOMatic {
     public static void main (String[] args) {
 
-        String[] wordListOne = {"24/7", "multi-task", "30,000 foot", "win-win", "front-end", "web-based",
+        String[] wordListOne = {"24/7", "multi-task", "30,000 foot", "win-win", "front-end", "web-based", "graphics"
         };
-        String[] wordListTwo = {"empowered", "oriented", "centric", "distributed", "clustered", "branded", "outside-the-box", "positioned",};
-        String[] wordListThree = {"process", "tipping-point", "solution", "architecture", "core competency",};
+        String[] wordListTwo = {"empowered", "oriented", "centric", "distributed", "clustered", "branded", "outside-the-box", "positioned", "set-up"};
+        String[] wordListThree = {"process", "tipping-point", "solution", "architecture", "core competency", "display"};
 
         int oneLength = wordListOne.length;
         int twoLength = wordListTwo.length;
