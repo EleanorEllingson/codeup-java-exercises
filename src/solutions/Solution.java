@@ -28,6 +28,20 @@ public class Solution {
 
         // Complete this line
         // Complete this line
+
+        System.out.println("Enter a number.");
+        int i = scan.nextInt();
+        String temp = scan.nextLine();
+        System.out.println("Enter a name.");
+        String s = scan.nextLine();
+        System.out.println("Enter a double.");
+        Double d = scan.nextDouble();
+        // Write your code here.
+
+        System.out.println("String: " + s);
+        System.out.println("Double: " + d);
+        System.out.println("Int: " + i);
+
     }
 }
 
