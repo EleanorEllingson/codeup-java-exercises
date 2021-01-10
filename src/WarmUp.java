@@ -26,5 +26,7 @@ public class WarmUp {
         System.out.print("What kind of vegetable? (use a singular noun, e.g. 'carrot' vs. 'carrots'): ");
         String veggie = sc.nextLine();
         System.out.printf("You have %d %ss!\n\n", count, veggie);
+
+
     }
 }
