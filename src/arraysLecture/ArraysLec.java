@@ -46,6 +46,24 @@ public class ArraysLec {
         dogs[1] = d2;
         dogs[2] = d3;
 
+        Cat cat1 = new Cat("Princess", 4);
+        Cat cat2 = new Cat("Star", 4);
+        Cat cat3 = new Cat("Spot", 2);
+        Cat cat4 = new Cat("Whiskers", 9);
+        Cat cat5 = new Cat("Tico", 1);
+
+        Cat[] cats = new Cat[3];
+        cats[0] = cat1;
+        cats[1] = cat2;
+        cats[2] = cat3;
+//cats[3] = cat4;
+//cats[4] = cat5;
+
+        for (Cat cat: cats){
+            System.out.println(cat.getName1() + " age " + cat.getAge());
+        }
+
+
 
 
 //        System.out.println(Arrays.toString(dogs));

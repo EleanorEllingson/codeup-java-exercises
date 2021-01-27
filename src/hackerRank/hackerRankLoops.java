@@ -22,6 +22,8 @@ public class hackerRankLoops {
             System.out.println(N + " x " + i + " = " + sum);
         }
             scanner.close();
+
+
     }
 }
 
