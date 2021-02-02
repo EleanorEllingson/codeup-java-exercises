@@ -36,12 +36,32 @@ public class LeetCodePractice {
         return false;
     }
 
+    public static void fizzBuzz(int n){
+        for(int i = 1; i <= n; i++){
+            if(i % 15 == 0){
+                System.out.println("FizzBuzz");
+            }
+            if(i % 5 == 0){
+                System.out.println("Buzz");
+            }
+            if(i % 3 == 0){
+                System.out.println("Fizz");
+            }else {
+                System.out.println(i);
+            }
+        }
+
+    }
+
+
     public static void main(String[] args){
 
 
         System.out.println(rotatedDigits(20));
         System.out.println(uniqueCharacters("eleanor"));
         System.out.println(permutationCheck("dad", "ads"));
+
+        fizzBuzz(100);
     }
 };
 
