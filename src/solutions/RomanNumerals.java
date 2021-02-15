@@ -2,27 +2,64 @@ package solutions;
 
 public class RomanNumerals {
 
-    public static void romanToInt (String s){
+    public static void romanToInt(String str) {
+        int len = str.length();
 
-            int I = 1;
-            int V = 5;
-            int X = 10;
-            int L = 50;
-            int C = 100;
-            int D = 500;
-            int M = 1000;
+        str = str + " ";
+        int result = 0;
+        for (int i = 0; i < len; i++) {
+            char ch = str.charAt(i);
+            char next_char = str.charAt(i + 1);
 
-            int sum = 0;
-
-
-            for (int i = 0; i < s.length(); i++) {
-
-                sum += i;
+            if (ch == 'M') {
+                result += 1000;
+            } else if (ch == 'C') {
+                if (next_char == 'M') {
+                    result += 900;
+                    i++;
+                } else if (next_char == 'D') {
+                    result += 400;
+                    i++;
+                } else {
+                    result += 100;
+                }
+            } else if (ch == 'D') {
+                result += 500;
+            } else if (ch == 'X') {
+                if (next_char == 'C') {
+                    result += 90;
+                    i++;
+                } else if (next_char == 'L') {
+                    result += 40;
+                    i++;
+                } else {
+                    result += 10;
+                }
+            } else if (ch == 'L') {
+                result += 50;
+            } else if (ch == 'I') {
+                if (next_char == 'X') {
+                    result += 9;
+                    i++;
+                } else if (next_char == 'V') {
+                    result += 4;
+                    i++;
+                } else {
+                    result++;
+                }
+            } else { // if (ch == 'V')
+                result += 5;
             }
-        System.out.println(sum);
 
 
         }
+
+
+        System.out.println(result);
+
+    }
+
+
     public static void main(String[] args) {
    romanToInt("XXVII");
     }
