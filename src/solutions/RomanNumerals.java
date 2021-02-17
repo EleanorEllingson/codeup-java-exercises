@@ -1,5 +1,7 @@
 package solutions;
 
+import java.util.ArrayList;
+
 public class RomanNumerals {
 
     public static void romanToInt(String str) {
@@ -59,9 +61,26 @@ public class RomanNumerals {
 
     }
 
+    public static void vowels(String word){
+
+        ArrayList<Character> vowel = new ArrayList<>();
+
+        for(int i = 0; i < word.length(); i++){
+            if (word.charAt(i)== 'a' || word.charAt(i)== 'e' || word.charAt(i)== 'i' || word.charAt(i)== 'o' || word.charAt(i)== 'u'){
+                vowel.add(word.charAt(i));
+            }
+
+
+        }
+        System.out.println(vowel);
+    }
+
 
     public static void main(String[] args) {
    romanToInt("XXVII");
+   vowels("Eleanor");
+
+
     }
 
 
